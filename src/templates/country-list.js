@@ -12,7 +12,7 @@ function makeRenderList(evt) {
 // make ul for div class="country-info"
 function makeRenderCountryInfoForDiv(evt) {
     return evt.map(el => {
-      const language = Object.values(el.languages)
+      const language = Object.values(el.languages).join(', ')
       return `
         <ul class="div-info-list">
           <li><p class="div-info-text">Capital: <span class="div-info-span">${el.capital}</span></p></li>
